@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "GitHub Repository",
+  "behavior": "create",
+  "noteContentFormat": "[Owner:: {{meta:name:octolytics-dimension-user_login}}]\n[Description:: {{selector:.Layout-sidebar p|first}}]\n[Source:: {{url|link:\"link\"}}]\n\n---\n\n{{selectorHtml:article|markdown}}",
+  "properties": [
+    {
+      "name": "title",
+      "value": "{{title|replace:\\\"/\\\":\\\" - \\\"|safe_name}}",
+      "type": "text"
+    },
+    {
+      "name": "type",
+      "value": "[[GitHub Repository]]",
+      "type": "text"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+      "type": "datetime"
+    },
+    {
+      "name": "modified",
+      "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+      "type": "datetime"
+    },
+    {
+      "name": "tags",
+      "value": "",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [
+    "/^https:\\/\\/github\\.com\\/(?!.*issues).*$/"
+  ],
+  "noteNameFormat": "{{title|replace:\"/\":\" - \"|safe_name}}",
+  "path": "Inbox/Clippings"
+}

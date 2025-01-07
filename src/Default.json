@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Default",
+  "behavior": "create",
+  "noteContentFormat": "[Publish:: {{site}}]\n[Description:: {{description}}]\n[Source:: {{url|link:\"link\"}}]\n\n---\n\n{{content}}",
+  "properties": [
+    {
+      "name": "title",
+      "value": "{{title|replace:\\\"/\\\":\\\" - \\\"|safe_name}}",
+      "type": "text"
+    },
+    {
+      "name": "type",
+      "value": "[[Web Pages]]",
+      "type": "text"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+      "type": "datetime"
+    },
+    {
+      "name": "modified",
+      "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+      "type": "datetime"
+    },
+    {
+      "name": "tags",
+      "value": "",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [],
+  "noteNameFormat": "{{title|replace:\"/\":\" - \"|safe_name}}",
+  "path": "Inbox/Clippings"
+}

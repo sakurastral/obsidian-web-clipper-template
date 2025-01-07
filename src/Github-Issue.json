@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "GitHub Issue",
+  "behavior": "create",
+  "noteContentFormat": "[Publisher:: {{site}}]\n[Description:: Published on {{selector:relative-time?datetime|first|date:\"YYYY-MM-DD HH:mm:ss Z\"}}]\n[Source:: {{url|link:\"link\"}}]\n\n---\n\n({{selector:#partial-discussion-header > div.d-flex.flex-items-center.flex-wrap.mt-0.gh-header-meta > div.flex-auto.min-width-0.mb-2|split:\"· \"|last}})\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|first}}\n\n{{selectorHtml:.comment-body|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:1|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:1|first}}\n\n{{selectorHtml:.comment-body|slice:1|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:2|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:2|first}}\n\n{{selectorHtml:.comment-body|slice:2|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:3|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:3|first}}\n\n{{selectorHtml:.comment-body|slice:3|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:4|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:4|first}}\n\n{{selectorHtml:.comment-body|slice:4|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:5|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:5|first}}\n\n{{selectorHtml:.comment-body|slice:5|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:6|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:6|first}}\n\n{{selectorHtml:.comment-body|slice:6|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:7|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:7|first}}\n\n{{selectorHtml:.comment-body|slice:7|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:8|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:8|first}}\n\n{{selectorHtml:.comment-body|slice:8|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:9|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:9|first}}\n\n{{selectorHtml:.comment-body|slice:9|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:10|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:10|first}}\n\n{{selectorHtml:.comment-body|slice:10|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:11|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:11|first}}\n\n{{selectorHtml:.comment-body|slice:11|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:12|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:12|first}}\n\n{{selectorHtml:.comment-body|slice:12|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:13|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:13|first}}\n\n{{selectorHtml:.comment-body|slice:13|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:14|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:14|first}}\n\n{{selectorHtml:.comment-body|slice:14|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:15|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:15|first}}\n\n{{selectorHtml:.comment-body|slice:15|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:16|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:16|first}}\n\n{{selectorHtml:.comment-body|slice:16|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:17|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:17|first}}\n\n{{selectorHtml:.comment-body|slice:17|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:18|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:18|first}}\n\n{{selectorHtml:.comment-body|slice:18|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:19|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:19|first}}\n\n{{selectorHtml:.comment-body|slice:19|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:20|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:20|first}}\n\n{{selectorHtml:.comment-body|slice:20|first|markdown}}\n",
+  "properties": [
+    {
+      "name": "title",
+      "value": "{{title|replace:\\\"/\\\":\\\" - \\\"|safe_name}}",
+      "type": "text"
+    },
+    {
+      "name": "type",
+      "value": "[[Github Issue]]",
+      "type": "text"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+      "type": "datetime"
+    },
+    {
+      "name": "modified",
+      "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "tags",
+      "value": "",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [
+    "/^https.+github.+issues.+$/"
+  ],
+  "noteNameFormat": "{{title|replace:\"/\":\" - \"|safe_name}}",
+  "path": "Inbox/Clippings"
+}

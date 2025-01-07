@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Medium",
+  "behavior": "create",
+  "noteContentFormat": "[Publisher:: {{author}} ({{site}})]\n[Published:: {{schema:@NewsArticle:datePublished|date:\"YYYY-MM-DDTHH:mm:ssZ\"}}]\n[Description:: {{description}}]\n[Source:: {{url|link:\"link\"}}]\n\n---\n\n{{selectorHtml:section|join|replace:\"h3\":\"h4\",\"h2\":\"h3\",\"h1\":\"h2\",\"<br>\":\"\\n\"|remove_html:\"aside, .speechify-ignore, .pw-post-title, .pw-subtitle-paragraph\"|markdown}} ",
+  "properties": [
+    {
+      "name": "title",
+      "value": "{{title|replace:\\\"/\\\":\\\" - \\\"|safe_name}}",
+      "type": "text"
+    },
+    {
+      "name": "type",
+      "value": "[[Medium]]",
+      "type": "text"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+      "type": "datetime"
+    },
+    {
+      "name": "modified",
+      "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+      "type": "datetime"
+    },
+    {
+      "name": "tags",
+      "value": "",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [
+    "/^https.+medium.+$/"
+  ],
+  "noteNameFormat": "{{title|replace:\"/\":\" - \"|safe_name}}",
+  "path": "Inbox/Clippings"
+}

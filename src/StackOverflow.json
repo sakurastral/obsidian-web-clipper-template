@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Stack Overflow",
+  "behavior": "create",
+  "noteContentFormat": "[Publisher:: {{site}}]\n[Source:: {{url|link:\"link\"}}]\n\n---\n\n## Asked by {{selector:.postcell .user-details a|last}} on {{selector:.postcell .user-action-time .relativetime|last|replace:\"at \":\"\"|date:\"YYYY-MM-DD HH:mm Z\"}} and Edited by {{selector:.postcell .user-details a|first}} on {{selector:.postcell .user-action-time .relativetime|first|replace:\"at \":\"\"|date:\"YYYY-MM-DD HH:mm Z\"}}\n\n{{selectorHtml:.postcell .s-prose|first|markdown}}\n\n## Answers\n\n### Answer\n\n{{selectorHtml:.answer .answercell|join:\"\\n### Answer\\n\"|replace:\"answered <span title=\":\" answered on <span title=\",\"edited <span title=\":\" edited on <span title=\",\"<div class=\\\"user-info\":\"#### Author<div class=\\\"user-info\"|remove_html:\".js-post-menu, .user-gravatar32, .-flair, .d-none\"|markdown|replace:\"\\\\### Answer\":\"### Answer\",\"\\\\#### answered on \":\"#### answered on \",\"\\\\#### edited on \":\"#### edited on \",\"\\\\#### Author\":\"#### Author\"}}\n",
+  "properties": [
+    {
+      "name": "title",
+      "value": "{{title|replace:\\\"/\\\":\\\" - \\\"|safe_name}}",
+      "type": "text"
+    },
+    {
+      "name": "type",
+      "value": "[[Stack Overflow]]",
+      "type": "text"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+      "type": "datetime"
+    },
+    {
+      "name": "modified",
+      "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+      "type": "datetime"
+    },
+    {
+      "name": "tags",
+      "value": "stackoverflow, {{selector:.post-taglist a|join:\\\", \\\"}}",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [
+    "/^https.+stackoverflow.+questions.+$/"
+  ],
+  "noteNameFormat": "{{title|replace:\"/\":\" - \"|safe_name}}",
+  "path": "Inbox/Clippings"
+}
